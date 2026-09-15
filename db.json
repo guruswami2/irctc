@@ -1,36 +1,67 @@
 {
   "stations": [
-    { "code": "NDLS", "name": "New Delhi", "city": "Delhi", "state": "Delhi" },
-    { "code": "BCT", "name": "Mumbai Central", "city": "Mumbai", "state": "Maharashtra" },
-    { "code": "CSMT", "name": "Chhatrapati Shivaji Maharaj Terminus", "city": "Mumbai", "state": "Maharashtra" },
-    { "code": "HWH", "name": "Howrah Junction", "city": "Kolkata", "state": "West Bengal" },
-    { "code": "MAS", "name": "Chennai Central", "city": "Chennai", "state": "Tamil Nadu" },
-    { "code": "SBC", "name": "KSR Bengaluru City", "city": "Bengaluru", "state": "Karnataka" },
-    { "code": "ADI", "name": "Ahmedabad Junction", "city": "Ahmedabad", "state": "Gujarat" },
-    { "code": "BSB", "name": "Varanasi Junction", "city": "Varanasi", "state": "Uttar Pradesh" },
-    { "code": "PUNE", "name": "Pune Junction", "city": "Pune", "state": "Maharashtra" },
-    { "code": "HYB", "name": "Hyderabad Deccan", "city": "Hyderabad", "state": "Telangana" }
+    {
+      "code": "NDLS",
+      "name": "New Delhi",
+      "city": "Delhi",
+      "state": "Delhi"
+    },
+    {
+      "code": "BCT",
+      "name": "Mumbai Central",
+      "city": "Mumbai",
+      "state": "Maharashtra"
+    },
+    {
+      "code": "CSMT",
+      "name": "Chhatrapati Shivaji Maharaj Terminus",
+      "city": "Mumbai",
+      "state": "Maharashtra"
+    },
+    {
+      "code": "HWH",
+      "name": "Howrah Junction",
+      "city": "Kolkata",
+      "state": "West Bengal"
+    },
+    {
+      "code": "MAS",
+      "name": "Chennai Central",
+      "city": "Chennai",
+      "state": "Tamil Nadu"
+    },
+    {
+      "code": "SBC",
+      "name": "KSR Bengaluru City",
+      "city": "Bengaluru",
+      "state": "Karnataka"
+    },
+    {
+      "code": "ADI",
+      "name": "Ahmedabad Junction",
+      "city": "Ahmedabad",
+      "state": "Gujarat"
+    },
+    {
+      "code": "BSB",
+      "name": "Varanasi Junction",
+      "city": "Varanasi",
+      "state": "Uttar Pradesh"
+    },
+    {
+      "code": "PUNE",
+      "name": "Pune Junction",
+      "city": "Pune",
+      "state": "Maharashtra"
+    },
+    {
+      "code": "HYB",
+      "name": "Hyderabad Deccan",
+      "city": "Hyderabad",
+      "state": "Telangana"
+    }
   ],
   "trains": [
-    {
-      "id": "12952",
-      "trainNumber": "12952",
-      "trainName": "Mumbai Rajdhani Express",
-      "source": "NDLS",
-      "destination": "BCT",
-      "sourceName": "New Delhi",
-      "destinationName": "Mumbai Central",
-      "departureTime": "16:55",
-      "arrivalTime": "08:35",
-      "duration": "15h 40m",
-      "runningDays": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-      "classes": {
-        "1A": { "price": 4250, "available": 8, "status": "AVAILABLE" },
-        "2A": { "price": 2850, "available": 24, "status": "AVAILABLE" },
-        "3A": { "price": 2150, "available": 62, "status": "AVAILABLE" },
-        "SL": { "price": 780, "available": 0, "status": "WL-12" }
-      }
-    },
     {
       "id": "20902",
       "trainNumber": "20902",
@@ -42,28 +73,36 @@
       "departureTime": "06:10",
       "arrivalTime": "11:35",
       "duration": "05h 25m",
-      "runningDays": ["Mon", "Tue", "Wed", "Fri", "Sat", "Sun"],
+      "runningDays": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
       "classes": {
-        "EC": { "price": 2450, "available": 18, "status": "AVAILABLE" },
-        "CC": { "price": 1380, "available": 95, "status": "AVAILABLE" }
-      }
-    },
-    {
-      "id": "12302",
-      "trainNumber": "12302",
-      "trainName": "Howrah Rajdhani Express",
-      "source": "NDLS",
-      "destination": "HWH",
-      "sourceName": "New Delhi",
-      "destinationName": "Howrah Junction",
-      "departureTime": "16:50",
-      "arrivalTime": "09:55",
-      "duration": "17h 05m",
-      "runningDays": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-      "classes": {
-        "1A": { "price": 4650, "available": 4, "status": "AVAILABLE" },
-        "2A": { "price": 3120, "available": 15, "status": "AVAILABLE" },
-        "3A": { "price": 2340, "available": 42, "status": "AVAILABLE" }
+        "EC": {
+          "price": 2450,
+          "available": 18,
+          "status": "AVAILABLE"
+        },
+        "CC": {
+          "price": 1380,
+          "available": 95,
+          "status": "AVAILABLE"
+        }
+      },
+      "quotas": {
+        "GENERAL": {
+          "available": true
+        },
+        "TATKAL": {
+          "available": true
+        },
+        "LADIES": {
+          "available": true
+        }
       }
     },
     {
@@ -77,10 +116,37 @@
       "departureTime": "15:00",
       "arrivalTime": "21:10",
       "duration": "06h 10m",
-      "runningDays": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      "runningDays": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
       "classes": {
-        "CC": { "price": 540, "available": 140, "status": "AVAILABLE" },
-        "2S": { "price": 180, "available": 230, "status": "AVAILABLE" }
+        "CC": {
+          "price": 540,
+          "available": 140,
+          "status": "AVAILABLE"
+        },
+        "2S": {
+          "price": 180,
+          "available": 230,
+          "status": "AVAILABLE"
+        }
+      },
+      "quotas": {
+        "GENERAL": {
+          "available": true
+        },
+        "TATKAL": {
+          "available": true
+        },
+        "LADIES": {
+          "available": true
+        }
       }
     },
     {
@@ -94,10 +160,35 @@
       "departureTime": "06:00",
       "arrivalTime": "14:00",
       "duration": "08h 00m",
-      "runningDays": ["Tue", "Wed", "Fri", "Sat", "Sun"],
+      "runningDays": [
+        "Tue",
+        "Wed",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
       "classes": {
-        "EC": { "price": 3300, "available": 12, "status": "AVAILABLE" },
-        "CC": { "price": 1750, "available": 54, "status": "AVAILABLE" }
+        "EC": {
+          "price": 3300,
+          "available": 12,
+          "status": "AVAILABLE"
+        },
+        "CC": {
+          "price": 1750,
+          "available": 54,
+          "status": "AVAILABLE"
+        }
+      },
+      "quotas": {
+        "GENERAL": {
+          "available": true
+        },
+        "TATKAL": {
+          "available": true
+        },
+        "LADIES": {
+          "available": true
+        }
       }
     },
     {
@@ -111,10 +202,201 @@
       "departureTime": "16:25",
       "arrivalTime": "19:50",
       "duration": "03h 25m",
-      "runningDays": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      "runningDays": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
       "classes": {
-        "CC": { "price": 420, "available": 88, "status": "AVAILABLE" },
-        "2S": { "price": 135, "available": 160, "status": "AVAILABLE" }
+        "CC": {
+          "price": 420,
+          "available": 88,
+          "status": "AVAILABLE"
+        },
+        "2S": {
+          "price": 135,
+          "available": 160,
+          "status": "AVAILABLE"
+        }
+      },
+      "quotas": {
+        "GENERAL": {
+          "available": true
+        },
+        "TATKAL": {
+          "available": true
+        },
+        "LADIES": {
+          "available": true
+        }
+      }
+    },
+    {
+      "id": "12723",
+      "trainNumber": "12723",
+      "trainName": "Telangana Express",
+      "source": "HYB",
+      "destination": "NDLS",
+      "sourceName": "Hyderabad Deccan",
+      "destinationName": "New Delhi",
+      "departureTime": "06:25",
+      "arrivalTime": "07:00",
+      "duration": "24h 35m",
+      "runningDays": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "classes": {
+        "2A": {
+          "price": 2480,
+          "available": 18,
+          "status": "AVAILABLE"
+        },
+        "3A": {
+          "price": 1760,
+          "available": 64,
+          "status": "AVAILABLE"
+        },
+        "SL": {
+          "price": 650,
+          "available": 122,
+          "status": "AVAILABLE"
+        }
+      },
+      "quotas": {
+        "GENERAL": {
+          "available": true
+        },
+        "TATKAL": {
+          "available": true
+        },
+        "LADIES": {
+          "available": true
+        }
+      }
+    },
+    {
+      "id": "12840",
+      "trainNumber": "12840",
+      "trainName": "Chennai Mail",
+      "source": "MAS",
+      "destination": "HWH",
+      "sourceName": "Chennai Central",
+      "destinationName": "Howrah Junction",
+      "departureTime": "23:55",
+      "arrivalTime": "04:20",
+      "duration": "28h 25m",
+      "runningDays": [
+        "Mon",
+        "Tue",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "classes": {
+        "2A": {
+          "price": 2940,
+          "available": 12,
+          "status": "AVAILABLE"
+        },
+        "3A": {
+          "price": 2070,
+          "available": 48,
+          "status": "AVAILABLE"
+        },
+        "SL": {
+          "price": 760,
+          "available": 96,
+          "status": "AVAILABLE"
+        }
+      },
+      "quotas": {
+        "GENERAL": {
+          "available": true
+        },
+        "TATKAL": {
+          "available": true
+        },
+        "LADIES": {
+          "available": true
+        }
+      }
+    },
+    {
+      "id": "train_1789473799169",
+      "trainNumber": "893932",
+      "trainName": "intercity",
+      "source": "HYD",
+      "destination": "VIJAY",
+      "sourceName": "hyd",
+      "destinationName": "vijay",
+      "departureTime": "12:03",
+      "arrivalTime": "06:05",
+      "duration": "06h 02m",
+      "runningDays": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "classes": {
+        "1A: 4 | 2A: 15 | 3A: 42": {
+          "price": 155,
+          "available": 135,
+          "status": "AVAILABLE"
+        }
+      },
+      "quotas": {
+        "GENERAL": {
+          "available": true
+        }
+      }
+    },
+    {
+      "id": "train_1789477067234",
+      "trainNumber": "12345",
+      "trainName": "intercity",
+      "source": "NDLS",
+      "destination": "BCT",
+      "sourceName": "New Delhi",
+      "destinationName": "Mumbai Central",
+      "journeyDate": "2026-09-16",
+      "departureTime": "06:50",
+      "arrivalTime": "12:45",
+      "duration": "06h 05m",
+      "runningDays": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "classes": {
+        "1A: 4 | 2A: 15 | 3A: 42": {
+          "price": 125,
+          "available": 150,
+          "status": "AVAILABLE"
+        }
+      },
+      "quotas": {
+        "GENERAL": {
+          "available": true
+        }
       }
     }
   ],
@@ -169,41 +451,202 @@
   ],
   "bookings": [
     {
-      "id": "bk_9012345671",
-      "pnr": "6419820491",
-      "userId": "usr_101",
-      "trainId": "12952",
-      "trainNumber": "12952",
-      "trainName": "Mumbai Rajdhani Express",
+      "id": "BK9477330357",
+      "userEmail": "admin@gmail.com",
+      "trainId": "train_1789477067234",
+      "trainNumber": "12345",
+      "trainName": "intercity",
       "source": "NDLS",
       "sourceName": "New Delhi",
       "destination": "BCT",
       "destinationName": "Mumbai Central",
-      "journeyDate": "2026-08-05",
-      "bookingDate": "2026-07-27",
-      "classType": "3A",
+      "journeyDate": "2026-09-16",
+      "classType": "1A: 4 | 2A: 15 | 3A: 42",
       "quota": "GENERAL",
       "passengers": [
         {
-          "name": "Rahul Sharma",
-          "age": 29,
+          "id": 1789477243766,
+          "fullName": "ram",
+          "age": 22,
           "gender": "Male",
-          "berth": "B3-12 (Lower)",
-          "status": "CNF"
-        },
-        {
-          "name": "Priya Sharma",
-          "age": 27,
-          "gender": "Female",
-          "berth": "B3-15 (Upper)",
-          "status": "CNF"
+          "berthPreference": "No Preference"
         }
       ],
-      "totalFare": 4300,
-      "paymentMethod": "UPI (rahulsharma@okhdfcbank)",
-      "transactionId": "TXN_8819203910",
-      "status": "BOOKED",
-      "cancellationRefund": null
+      "totalFare": 125,
+      "paymentMethod": "Mock UPI",
+      "status": "BOOKED"
+    },
+    {
+      "id": "BK9477623618",
+      "userEmail": "admin@gmail.com",
+      "trainId": "20902",
+      "trainNumber": "20902",
+      "trainName": "Vande Bharat Express",
+      "source": "ADI",
+      "sourceName": "Ahmedabad Junction",
+      "destination": "CSMT",
+      "destinationName": "Mumbai CSMT",
+      "journeyDate": "2026-09-16",
+      "classType": "CC",
+      "quota": "GENERAL",
+      "passengers": [
+        {
+          "id": 1789477243766,
+          "fullName": "ram",
+          "age": 22,
+          "gender": "Male",
+          "berthPreference": "No Preference"
+        }
+      ],
+      "totalFare": 1380,
+      "paymentMethod": "Mock Net Banking",
+      "status": "Cancelled",
+      "cancelledAt": "2026-09-15T13:07:28.538Z"
+    },
+    {
+      "id": "BK9478036005",
+      "userEmail": "rajesh@gmail.cm",
+      "trainId": "12723",
+      "trainNumber": "12723",
+      "trainName": "Telangana Express",
+      "source": "HYB",
+      "sourceName": "Hyderabad Deccan",
+      "destination": "NDLS",
+      "destinationName": "New Delhi",
+      "journeyDate": "2026-09-17",
+      "classType": "2A",
+      "quota": "GENERAL",
+      "passengers": [
+        {
+          "id": 1789477923261,
+          "fullName": "rajesh",
+          "age": 23,
+          "gender": "Male",
+          "berthPreference": "Side Lower"
+        },
+        {
+          "id": 1789477940344,
+          "fullName": "hari",
+          "age": 23,
+          "gender": "Male",
+          "berthPreference": "Upper"
+        }
+      ],
+      "totalFare": 4960,
+      "paymentMethod": "Mock UPI",
+      "status": "Cancelled",
+      "cancelledAt": "2026-09-15T13:32:29.725Z"
+    },
+    {
+      "id": "BK9478521643",
+      "userEmail": "rajesh@gmail.cm",
+      "trainId": "20902",
+      "trainNumber": "20902",
+      "trainName": "Vande Bharat Express",
+      "source": "ADI",
+      "sourceName": "Ahmedabad Junction",
+      "destination": "CSMT",
+      "destinationName": "Mumbai CSMT",
+      "journeyDate": "2026-09-16",
+      "classType": "EC",
+      "quota": "GENERAL",
+      "passengers": [
+        {
+          "id": 1789477923261,
+          "fullName": "rajesh",
+          "age": 23,
+          "gender": "Male",
+          "berthPreference": "Side Lower"
+        }
+      ],
+      "totalFare": 2450,
+      "paymentMethod": "Mock UPI",
+      "status": "BOOKED"
+    },
+    {
+      "id": "BK9478734284",
+      "userEmail": "rajesh@gmail.cm",
+      "trainId": "20902",
+      "trainNumber": "20902",
+      "trainName": "Vande Bharat Express",
+      "source": "ADI",
+      "sourceName": "Ahmedabad Junction",
+      "destination": "CSMT",
+      "destinationName": "Mumbai CSMT",
+      "journeyDate": "2026-09-16",
+      "classType": "EC",
+      "quota": "GENERAL",
+      "passengers": [
+        {
+          "id": 1789477923261,
+          "fullName": "rajesh",
+          "age": 23,
+          "gender": "Male",
+          "berthPreference": "Side Lower"
+        }
+      ],
+      "totalFare": 2450,
+      "paymentMethod": "Mock Card",
+      "status": "BOOKED"
+    },
+    {
+      "id": "BK9479128431",
+      "userEmail": "rajesh@gmail.cm",
+      "trainId": "20902",
+      "trainNumber": "20902",
+      "trainName": "Vande Bharat Express",
+      "source": "ADI",
+      "sourceName": "Ahmedabad Junction",
+      "destination": "CSMT",
+      "destinationName": "Mumbai CSMT",
+      "journeyDate": "2026-09-19",
+      "classType": "EC",
+      "quota": "GENERAL",
+      "passengers": [
+        {
+          "id": 1789477940344,
+          "fullName": "hari",
+          "age": 23,
+          "gender": "Male",
+          "berthPreference": "Upper"
+        }
+      ],
+      "totalFare": 2450,
+      "paymentMethod": "Mock Net Banking",
+      "status": "BOOKED"
+    },
+    {
+      "id": "BK9479353585",
+      "userEmail": "rajesh@gmail.cm",
+      "trainId": "train_1789477067234",
+      "trainNumber": "12345",
+      "trainName": "intercity",
+      "source": "NDLS",
+      "sourceName": "New Delhi",
+      "destination": "BCT",
+      "destinationName": "Mumbai Central",
+      "journeyDate": "2026-09-16",
+      "classType": "1A: 4 | 2A: 15 | 3A: 42",
+      "quota": "GENERAL",
+      "passengers": [
+        {
+          "id": 1789477923261,
+          "fullName": "rajesh",
+          "age": 23,
+          "gender": "Male",
+          "berthPreference": "Side Lower"
+        },
+        {
+          "id": 1789477940344,
+          "fullName": "hari",
+          "age": 23,
+          "gender": "Male",
+          "berthPreference": "Upper"
+        }
+      ],
+      "totalFare": 250,
+      "paymentMethod": "Mock Net Banking",
+      "status": "BOOKED"
     }
   ]
 }
